@@ -14,6 +14,7 @@
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             grid-gap: 10px;
+
         }
         .day {
             overflow-y: auto;
@@ -41,6 +42,7 @@
         }
         .droppable {
             min-height: 150px;
+
             border: 2px dashed #ccc;
         }
         .search-container {
@@ -133,90 +135,108 @@
         <div class="day droppable" data-day="Monday">
             <h3>Monday</h3>
 
-
-            <div class="time-slot droppable" data-time-slot="0" data-days="MW">8:00-9:25 am MW</div>
-            <div class="time-slot droppable" data-time-slot="1" data-days="MF">8:00-9:25 am MF</div>
-            <div class="time-slot droppable" data-time-slot="2" data-days="M-F">8:30-9:25 am M-F</div>
-            <div class="time-slot droppable" data-time-slot="3" data-days="MWF">8:30-9:25 am MWF</div>
-            <div class="time-slot droppable" data-time-slot="4" data-days="MWF" >9:35-10:30 am MWF</div>
-            <div class="time-slot droppable" data-time-slot="5" data-days="MWF" >10:40-11:35 am MWF</div>
-            <div class="time-slot droppable" data-time-slot="6" data-days="MWF">11:45-12:40 pm MWF</div>
-            <div class="time-slot droppable" data-time-slot="7" data-days="M-F">1:55-2:50 pm M-F</div>
-            <div class="time-slot droppable" data-time-slot="8" data-days="MWF">1:55-2:50 pm MWF</div>
-            <div class="time-slot droppable" data-time-slot="9" data-days="MWF">1:55-2:50 pm MWF</div>
-            <div class="time-slot droppable" data-time-slot="10" data-days="MWF">3:00-3:55 pm MWF</div>
-            <div class="time-slot droppable" data-time-slot="11" data-days="M-LAB">3:00-5:55 pm M-LAB</div>
-            <div class="time-slot droppable" data-time-slot="12" data-days="MWF">4:05-5:00 pm MWF</div>
-            <div class="time-slot droppable" data-time-slot="13" data-days="MW">4:05-5:30 pm MW</div>
-            <div class="time-slot droppable" data-time-slot="14" data-days="MF">4:05-5:30 pm MF</div>
-            <div class="time-slot droppable" data-time-slot="15" data-days="MW">5:40-7:05 pm MW</div>
-            <div class="time-slot droppable" data-time-slot="16" data-days="MW">7:15-8:40 pm MW</div>
-            <div class="time-slot droppable" data-time-slot="17" data-days="M-LAB">7:15-10:10 pm M-LAB</div>
-            <div class="time-slot droppable" data-time-slot="18" data-days="MW">8:50-10:15 pm MW</div>
-
-
+            <div class="time-slot droppable" data-time-slot="0" data-days="8:00-9:25 am MW">8:00-9:25 am MW</div>
+            <div class="time-slot droppable" data-time-slot="1" data-days="8:00-9:25 am MF">8:00-9:25 am MF</div>
+            <div class="time-slot droppable" data-time-slot="2" data-days="8:30-9:25 am M-F">8:30-9:25 am M-F</div>
+            <div class="time-slot droppable" data-time-slot="3" data-days="8:30-9:25 am MWF">8:30-9:25 am MWF</div>
+            <div class="time-slot droppable" data-time-slot="4" data-days="9:35-10:30 am MWF" >9:35-10:30 am MWF</div>
+            <div class="time-slot droppable" data-time-slot="5" data-days="10:40-11:35 am MWF" >10:40-11:35 am MWF</div>
+            <div class="time-slot droppable" data-time-slot="6" data-days="11:45-12:40 pm MWF">11:45-12:40 pm MWF</div>
+            <div class="time-slot droppable" data-time-slot="7" data-days="1:55-2:50 pm M-F">1:55-2:50 pm M-F</div>
+            <div class="time-slot droppable" data-time-slot="8" data-days="1:55-2:50 pm MWF">1:55-2:50 pm MWF</div>
+            <div class="time-slot droppable" data-time-slot="9" data-days="1:55-2:50 pm MWF">1:55-2:50 pm MWF</div>
+            <div class="time-slot droppable" data-time-slot="10" data-days="3:00-3:55 pm MWF">3:00-3:55 pm MWF</div>
+            <div class="time-slot droppable" data-time-slot="11" data-days="3:00-5:55 pm M-LAB">3:00-5:55 pm M-LAB</div>
+            <div class="time-slot droppable" data-time-slot="12" data-days="4:05-5:00 pm MWF">4:05-5:00 pm MWF</div>
+            <div class="time-slot droppable" data-time-slot="13" data-days="4:05-5:30 pm MW">4:05-5:30 pm MW</div>
+            <div class="time-slot droppable" data-time-slot="14" data-days="4:05-5:30 pm MF">4:05-5:30 pm MF</div>
+            <div class="time-slot droppable" data-time-slot="15" data-days="5:40-7:05 pm MW">5:40-7:05 pm MW</div>
+            <div class="time-slot droppable" data-time-slot="16" data-days="7:15-8:40 pm MW">7:15-8:40 pm MW</div>
+            <div class="time-slot droppable" data-time-slot="17" data-days="7:15-10:10 pm M-LAB">7:15-10:10 pm M-LAB</div>
+            <div class="time-slot droppable" data-time-slot="18" data-days="8:50-10:15 pm MW">8:50-10:15 pm MW</div>
 
         </div>
         <div class="day droppable" data-day="Tuesday">
             <h3>Tuesday</h3>
 
-
-            <div class="time-slot droppable" data-time-slot="0" data-days="TR">8:30-9:55 am TR</div>
-            <div class="time-slot droppable" data-time-slot="1" data-days="T">8:30-11:25 am T</div>
-            <div class="time-slot droppable" data-time-slot="2" data-days="T-LAB">8:30-11:25 am T-LAB</div>
-            <div class="time-slot droppable" data-time-slot="3" data-days="TR">10:05-11:30 am TR</div>
-            <div class="time-slot droppable" data-time-slot="4" data-days="M-F">8:30-9:25 am M-F</div>
-            <div class="time-slot droppable" data-time-slot="5" data-days="TR">1:30-2:55 pm TR</div>
-            <div class="time-slot droppable" data-time-slot="6" data-days="T">1:30-4:25 pm T</div>
-            <div class="time-slot droppable" data-time-slot="7" data-days="T-LAB">1:30-4:25 am T-LAB</div>
-            <div class="time-slot droppable" data-time-slot="8" data-days="M-F">1:55-2:50 pm M-F</div>
-            <div class="time-slot droppable" data-time-slot="9" data-days="TR">3:05-4:30 pm TR</div>
-            <div class="time-slot droppable" data-time-slot="10" data-days="TR">5:00-6:25 pm TR</div>
-            <div class="time-slot droppable" data-time-slot="11" data-days="T">7:15-10:15 pm T</div>
-
-
-
+            <div class="time-slot droppable" data-time-slot="0" data-days="8:30-9:25 am M-F">8:30-9:25 am M-F</div>
+            <div class="time-slot droppable" data-time-slot="1" data-days="8:30-9:55 am TR">8:30-9:55 am TR</div>
+            <div class="time-slot droppable" data-time-slot="2" data-days="8:30-11:25 am T">8:30-11:25 am T</div>
+            <div class="time-slot droppable" data-time-slot="3" data-days="8:30-11:25 am T-LAB">8:30-11:25 am T-LAB</div>
+            <div class="time-slot droppable" data-time-slot="4" data-days="10:05-11:30 am TR">10:05-11:30 am TR</div>
+            <div class="time-slot droppable" data-time-slot="5" data-days="1:30-2:55 pm TR">1:30-2:55 pm TR</div>
+            <div class="time-slot droppable" data-time-slot="6" data-days="1:30-4:25 pm T">1:30-4:25 pm T</div>
+            <div class="time-slot droppable" data-time-slot="7" data-days="1:30-4:25 pm T-LAB">1:30-4:25 pm T-LAB</div>
+            <div class="time-slot droppable" data-time-slot="8" data-days="1:55-2:50 pm M-F">1:55-2:50 pm M-F</div>
+            <div class="time-slot droppable" data-time-slot="9" data-days="3:05-4:30 pm TR">3:05-4:30 pm TR</div>
+            <div class="time-slot droppable" data-time-slot="10" data-days="5:00-6:25 pm TR">5:00-6:25 pm TR</div>
+            <div class="time-slot droppable" data-time-slot="11" data-days="7:15-10:15 pm T">7:15-10:15 pm T</div>
 
         </div>
         <div class="day droppable" data-day="Wednesday">
             <h3>Wednesday</h3>
 
-            <div class="time-slot droppable" data-time-slot="0" data-days="MW">8:00-9:25 am MW</div>
-            <div class="time-slot droppable" data-time-slot="1" data-days="M-F">8:30-9:25 am M-F</div>
-            <div class="time-slot droppable" data-time-slot="2" data-days="MWF">8:30-9:25 am MWF</div>
-            <div class="time-slot droppable" data-time-slot="3" data-days="MWF" >9:35-10:30 am MWF</div>
-            <div class="time-slot droppable" data-time-slot="4" data-days="MWF" >10:40-11:35 am MWF</div>
-            <div class="time-slot droppable" data-time-slot="5" data-days="MWF">11:45-12:40 pm MWF</div>
-            <div class="time-slot droppable" data-time-slot="6" data-days="M-F">1:55-2:50 pm M-F</div>
-            <div class="time-slot droppable" data-time-slot="7" data-days="MWF">1:55-2:50 pm MWF</div>
-            <div class="time-slot droppable" data-time-slot="8" data-days="MWF">1:55-2:50 pm MWF</div>
-            <div class="time-slot droppable" data-time-slot="9" data-days="W-LAB">1:55-4:50 pm W-LAB</div>
-            <div class="time-slot droppable" data-time-slot="10" data-days="MWF">3:00-3:55 pm MWF</div>
-            <div class="time-slot droppable" data-time-slot="11" data-days="W-LAB">3:00-5:55 pm W-LAB</div>
-            <div class="time-slot droppable" data-time-slot="12" data-days="MWF">4:05-5:00 pm MWF</div>
-            <div class="time-slot droppable" data-time-slot="13" data-days="MW">4:05-5:30 pm MW</div>
-            <div class="time-slot droppable" data-time-slot="14" data-days="MW">5:40-7:05 pm MW</div>
-            <div class="time-slot droppable" data-time-slot="15" data-days="MW">7:15-8:40 pm MW</div>
-            <div class="time-slot droppable" data-time-slot="16" data-days="W-LAB">7:15-10:10 pm W-LAB</div>
-            <div class="time-slot droppable" data-time-slot="17" data-days="W">7:15-10:15 pm W</div>
-            <div class="time-slot droppable" data-time-slot="18" data-days="MW">8:50-10:15 pm MW</div>
+            <div class="time-slot droppable" data-time-slot="0" data-days="8:00-9:25 am MW">8:00-9:25 am MW</div>
+            <div class="time-slot droppable" data-time-slot="1" data-days="8:30-9:25 am M-F">8:30-9:25 am M-F</div>
+            <div class="time-slot droppable" data-time-slot="2" data-days="8:30-9:25 am MWF">8:30-9:25 am MWF</div>
+            <div class="time-slot droppable" data-time-slot="3" data-days="9:35-10:30 am MWF">9:35-10:30 am MWF</div>
+            <div class="time-slot droppable" data-time-slot="4" data-days="10:40-11:35 am MWF">10:40-11:35 am MWF</div>
+            <div class="time-slot droppable" data-time-slot="5" data-days="11:45-12:40 pm MWF">11:45-12:40 pm MWF</div>
+            <div class="time-slot droppable" data-time-slot="6" data-days="1:55-2:50 pm M-F">1:55-2:50 pm M-F</div>
+            <div class="time-slot droppable" data-time-slot="7" data-days="1:55-2:50 pm MWF">1:55-2:50 pm MWF</div>
+            <div class="time-slot droppable" data-time-slot="8" data-days="1:55-2:50 pm MWF">1:55-2:50 pm MWF</div>
+            <div class="time-slot droppable" data-time-slot="9" data-days="1:55-4:50 pm W-LAB">1:55-4:50 pm W-LAB</div>
+            <div class="time-slot droppable" data-time-slot="10" data-days="3:00-3:55 pm MWF">3:00-3:55 pm MWF</div>
+            <div class="time-slot droppable" data-time-slot="11" data-days="3:00-5:55 pm W-LAB">3:00-5:55 pm W-LAB</div>
+            <div class="time-slot droppable" data-time-slot="12" data-days="4:05-5:00 pm MWF">4:05-5:00 pm MWF</div>
+            <div class="time-slot droppable" data-time-slot="13" data-days="4:05-5:30 pm MW">4:05-5:30 pm MW</div>
+            <div class="time-slot droppable" data-time-slot="14" data-days="5:40-7:05 pm MW">5:40-7:05 pm MW</div>
+            <div class="time-slot droppable" data-time-slot="15" data-days="7:15-8:40 pm MW">7:15-8:40 pm MW</div>
+            <div class="time-slot droppable" data-time-slot="16" data-days="7:15-10:10 pm W-LAB">7:15-10:10 pm W-LAB</div>
+            <div class="time-slot droppable" data-time-slot="17" data-days="7:15-10:15 pm W">7:15-10:15 pm W</div>
+            <div class="time-slot droppable" data-time-slot="18" data-days="8:50-10:15 pm MW">8:50-10:15 pm MW</div>
+            
 
 
         </div>
         <div class="day droppable" data-day="Thursday">
             <h3>Thursday</h3>
-            <div class="time-slot droppable" data-time-slot="0">8:30-9:55 am</div>
-            <div class="time-slot droppable" data-time-slot="1">10:05-11:30 am</div>
-            <div class="time-slot droppable" data-time-slot="2">1:30-2:55 pm</div>
-            <div class="time-slot droppable" data-time-slot="3">3:05-4:30 pm</div>
-            <div class="time-slot droppable" data-time-slot="4">5:00-6:25 pm</div>
+    
+            <div class="time-slot droppable" data-time-slot="0" data-days="8:30-9:25 am M-F">8:30-9:25 am M-F</div>
+            <div class="time-slot droppable" data-time-slot="1" data-days="8:30-9:55 am TR">8:30-9:55 am TR</div>
+            <div class="time-slot droppable" data-time-slot="2" data-days="8:30-11:25 am R">8:30-11:25 am R</div>
+            <div class="time-slot droppable" data-time-slot="3" data-days="8:30-11:25 am R-LAB">8:30-11:25 am R-LAB</div>
+            <div class="time-slot droppable" data-time-slot="4" data-days="10:05-11:30 am TR">10:05-11:30 am TR</div>
+            <div class="time-slot droppable" data-time-slot="5" data-days="1:30-2:55 pm TR">1:30-2:55 pm TR</div>
+            <div class="time-slot droppable" data-time-slot="6" data-days="1:30-4:25 pm R">1:30-4:25 pm R</div>
+            <div class="time-slot droppable" data-time-slot="7" data-days="1:30-4:25 pm R-LAB">1:30-4:25 pm R-LAB</div>
+            <div class="time-slot droppable" data-time-slot="8" data-days="1:55-2:50 pm M-F">1:55-2:50 pm M-F</div>
+            <div class="time-slot droppable" data-time-slot="9" data-days="3:05-4:30 pm TR">3:05-4:30 pm TR</div>
+            <div class="time-slot droppable" data-time-slot="10" data-days="5:00-6:25 pm TR">5:00-6:25 pm TR</div>
+            <div class="time-slot droppable" data-time-slot="11" data-days="7:15-10:10 pm R-LAB">7:15-10:10 pm R-LAB</div>
+            <div class="time-slot droppable" data-time-slot="12" data-days="7:15-10:15 pm R">7:15-10:15 pm R</div>
+            
+
         </div>
         <div class="day droppable" data-day="Friday">
             <h3>Friday</h3>
-            <div class="time-slot droppable" data-time-slot="0">8:30-9:25 am</div>
-            <div class="time-slot droppable" data-time-slot="1">1:55-2:50 pm</div>
-            <div class="time-slot droppable" data-time-slot="2">3:00-5:55 pm</div>
-            <div class="time-slot droppable" data-time-slot="3">7:15-10:10 pm</div>
+      
+            <div class="time-slot droppable" data-time-slot="0" data-days="8:00-9:25 am MF">8:00-9:25 am MF</div>
+            <div class="time-slot droppable" data-time-slot="1" data-days="8:30-9:25 am M-F">8:30-9:25 am M-F</div>
+            <div class="time-slot droppable" data-time-slot="2" data-days="8:30-9:25 am MWF">8:30-9:25 am MWF</div>
+            <div class="time-slot droppable" data-time-slot="3" data-days="9:35-10:30 am MWF">9:35-10:30 am MWF</div>
+            <div class="time-slot droppable" data-time-slot="4" data-days="10:40-11:35 am MWF">10:40-11:35 am MWF</div>
+            <div class="time-slot droppable" data-time-slot="5" data-days="11:45-12:40 pm MWF">11:45-12:40 pm MWF</div>
+            <div class="time-slot droppable" data-time-slot="6" data-days="1:55-2:50 pm M-F">1:55-2:50 pm M-F</div>
+            <div class="time-slot droppable" data-time-slot="7" data-days="1:55-2:50 pm MWF">1:55-2:50 pm MWF</div>
+            <div class="time-slot droppable" data-time-slot="8" data-days="1:55-2:50 pm MWF">1:55-2:50 pm MWF</div>
+            <div class="time-slot droppable" data-time-slot="9" data-days="3:00-3:55 pm MWF">3:00-3:55 pm MWF</div>
+            <div class="time-slot droppable" data-time-slot="10" data-days="3:00-5:55 pm F-LAB">3:00-5:55 pm F-LAB</div>
+            <div class="time-slot droppable" data-time-slot="11" data-days="4:05-5:00 pm MWF">4:05-5:00 pm MWF</div>
+            <div class="time-slot droppable" data-time-slot="12" data-days="4:05-5:30 pm MF">4:05-5:30 pm MF</div>
+            <div class="time-slot droppable" data-time-slot="13" data-days="7:15-10:10 pm F-LAB">7:15-10:10 pm F-LAB</div>
+            
+
         </div>
     </div>
     
@@ -282,7 +302,7 @@ droppableTimeSlots.forEach(timeSlot => {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ day: day, time_slot: timeSlotIndex, class: draggingElement.getAttribute('data-class') })
+                body: JSON.stringify({ day: day, time_slot: timeSlotIndex, dataDay:timeSlot.getAttribute('data-days'), class: draggingElement.getAttribute('data-class') })
             })
             .then(response => response.json())
             .then(data => {
@@ -350,5 +370,10 @@ trashBin.addEventListener('drop', () => {
             });
         });
     </script>
+
+
+
+
+
 </body>
 {% endblock %}

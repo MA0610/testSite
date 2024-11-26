@@ -1,0 +1,9 @@
+[build]
+  publish = "static"  # If you have a directory for static content
+  functions = "functions"  # Folder where Python functions reside
+
+[build.environment]
+  PYTHON_VERSION = "3.12.0"  # Make sure to use Python 3.12.0
+
+[[plugins]]
+  package = "@netlify/plugin-functions-install-core"

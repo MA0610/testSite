@@ -28,6 +28,8 @@ body, html {
     border-right: 2px solid #ccc;
     min-width: 250px; /* Ensure a minimum width */
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+
 }
 /* Right content (schedule + toolkit) */
 .content {
@@ -41,12 +43,12 @@ body, html {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* Columns for each day */
     grid-gap: 10px;
-    overflow-y: scroll;
-    max-height: 500px;
+    overflow-y: auto;
+    /* height: 100%; */
 }
 .day {
-max-height: 100%; /* Adjust as needed */
-overflow-y: auto; /* Vertical scrolling within each day */
+    max-height: 100%; /* Adjust as needed */
+    overflow-y: auto; /* Vertical scrolling within each day */
 }
 /* Optional styling to visually show that the day is scrollable */
 .day::-webkit-scrollbar {
@@ -131,11 +133,11 @@ overflow-y: auto; /* Vertical scrolling within each day */
 }
 .container {
     width: 100vw;  /* Full width of the viewport */
-    height: 100vh; /* Full height of the viewport */
+    height: auto; /* Full height of the viewport */
     padding: 20px; /* Add padding for spacing */
     margin: 20px auto; /* Center align with some margin */
     max-width: 1200px; /* Limit the maximum width for better readability */
-    overflow: hidden; /* Prevent unwanted scrolling */
+    overflow: visible; /* Prevent unwanted scrolling */
     display: flex;
     flex-direction: column;
 }
@@ -179,6 +181,10 @@ button {
 button:hover {
     background-color: #5aa9a3;
 }
+.table{
+    width: 100%;
+    margin: 0;
+}
 /* Cant be tested until Ui format changes */
 .table-hover tbody tr:hover {
     background-color: #f0f8ff; /* Light blue for hover */
@@ -191,4 +197,21 @@ button:hover {
     .addCourse {
         min-width: 100%; /* Ensure the side panel stacks vertically */
     }
+}
+.conflict {
+    color: red;
+    font-weight: bold;
+}
+.scrollable-container {
+    max-height: 100vh; /* Adjust to fit your needs */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+.clickable {
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.clickable:hover {
+    background-color: #f1f1f1;
 }
